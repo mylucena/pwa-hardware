@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #d89f95; 
+}
+
+
+main.container {
+    background-color: #f3d7d4; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.image-button img {
+    width: 80px;
+    height: auto;
+}
+
+
+.btn {
+    background-color: #d89f95; 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #efa8d8; 
+}
+
+#shopping-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#shopping-list li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#shopping-list img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .image-button img {
+        width: 60px;
+    }
+
+    #shopping-list img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .image-button img {
+        width: 50px;
+    }
+
+    #shopping-list img {
+        width: 30px;
+        height: 30px;
+    }
+
+    main.container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+        padding: 8px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
